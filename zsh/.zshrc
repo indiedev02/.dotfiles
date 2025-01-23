@@ -103,7 +103,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
+# Homebrew
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # bun completions
@@ -112,3 +112,8 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
