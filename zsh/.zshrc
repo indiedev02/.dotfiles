@@ -103,9 +103,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Homebrew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
 # bun completions
 [ -s "/home/kunal/.bun/_bun" ] && source "/home/kunal/.bun/_bun"
 
