@@ -141,3 +141,7 @@ for_window [class="^.*"] client.focused     #77dd77 #285577 #ffffff #2e9ef4   #2
 
 # Picom
 exec --no-startup-id picom
+
+# Background Wallpaper
+exec_always feh --bg-scale ~/.config/wallpaper.jpg
+
