@@ -1,4 +1,6 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+
+-- Auto-install lazy.nvim if not present
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
 	local lazyrepo = "https://github.com/folke/lazy.nvim.git"
 	local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
@@ -17,10 +19,7 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Setup lazy.nvim
 require("lazy").setup({
-	spec = {
-		-- import your plugins
-		{ import = "SharK-020.plugins" },
-	},
-	checker = { enabled = true },
+    spec = "SharK-020.plugins",
+    change_detection = {notify = false}
 })
 
