@@ -17,15 +17,15 @@ order += "load"
 order += "tztime local"
 
 battery all {
-        format = "%status %percentage %remaining"
+        format = "%percentage"
 }
 
 tztime local {
-        format = "%Y-%m-%d %H:%M:%S"
+        format = "%Y-%m-%d %H:%M"
 }
 
 load {
-        format = "%1min"
+        format = "%1min%"
 }
 
 disk "/" {
