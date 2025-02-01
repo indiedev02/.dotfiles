@@ -103,20 +103,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# bun completions
-[ -s "/home/kunal/.bun/_bun" ] && source "/home/kunal/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-
-
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
-# fnm
-FNM_PATH="/home/kunal/.local/share/fnm"
-if [ -d "$FNM_PATH" ]; then
-  export PATH="/home/kunal/.local/share/fnm:$PATH"
-  eval "`fnm env`"
-fi
