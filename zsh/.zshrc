@@ -104,3 +104,10 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# fnm
+FNM_PATH="/home/kunal/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/home/kunal/.local/share/fnm:$PATH"
+  eval "`fnm env`"
+fi
