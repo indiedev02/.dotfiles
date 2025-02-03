@@ -160,8 +160,7 @@ exec_always feh --bg-scale ~/.config/wallpaper.jpg
 
 # Assign Specific Apps To Workspaces
 assign [class="Chromium" instance="chromium"] $ws1
-assign [class="Code" instance="code"] $ws3
-assign [class="firefox" instance="Navigator"] $ws4
-assign [class="Brave" instance="brave"] $ws5
+assign [class="firefox" instance="Navigator"] $ws2
+assign [class="Code" instance="code"] $ws4
 assign [class="discord" instance="discord"] $ws6
 assign [class="Slack" instance="slack"] $ws9
