@@ -102,6 +102,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+export EDITOR=nvim
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
@@ -111,3 +112,8 @@ if [ -d "$FNM_PATH" ]; then
   export PATH="/home/kunal/.local/share/fnm:$PATH"
   eval "`fnm env`"
 fi
+
+export PATH="/home/kunal/.config/tmux/plugins/tmuxifier/bin/:$PATH"
+eval "$(tmuxifier init -)"
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
