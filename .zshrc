@@ -3,9 +3,6 @@ eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/bubblesl
 #fnm
 eval "$(fnm env --use-on-cd)"
 
-cd ~/Developer
-
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/opt/homebrew/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
