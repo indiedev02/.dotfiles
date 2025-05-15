@@ -9,3 +9,9 @@ local opts = { noremap = true, silent = true }
 
 keymap.set("n", "<C-d>", "<C-d>zz", opts)
 keymap.set("n", "<C-d>", "<C-d>zz", opts)
+
+-- Tmux Navigation
+keymap.set("n", "<C-h>", ":TmuxNavigateLeft<Return>", opts)
+keymap.set("n", "<C-j>", ":TmuxNavigateDown<Return>", opts)
+keymap.set("n", "<C-k>", ":TmuxNavigateUp<Return>", opts)
+keymap.set("n", "<C-l>", ":TmuxNavigateRight<Return>", opts)

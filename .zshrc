@@ -1,6 +1,4 @@
-#oh-my-posh
-eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/bubbles.omp.json)"
-#fnm
+# fnm
 eval "$(fnm env --use-on-cd)"
 
 # >>> conda initialize >>>
@@ -17,4 +15,10 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+# Disable conda prompt formatting
+export CONDA_CHANGEPS1=false
+
+# Starship 
+eval "$(starship init zsh)"
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
 

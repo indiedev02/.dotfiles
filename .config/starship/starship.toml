@@ -1,0 +1,12 @@
+add_newline = false
+# A minimal left prompt
+format = """$directory$character"""
+right_format = """$all"""
+
+[directory]
+truncation_length = 1
+
+[conda]
+style = "bold green"
+format = '[$symbol$environment]($style)'
+symbol = ' '
