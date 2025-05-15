@@ -1,5 +1,5 @@
 #oh-my-posh
-eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/bubblesline.omp.json)"
+eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/bubbles.omp.json)"
 #fnm
 eval "$(fnm env --use-on-cd)"
 
