@@ -12,3 +12,7 @@ vim.o.guicursor = table.concat({
   "r-cr:hor20-blinkon500-blinkoff500", -- Replace/Command Replace: blinking horizontal bar
   "o:hor50", -- Operator-pending: solid horizontal bar
 }, ",")
+
+-- Highlight fix when searching
+vim.o.hlsearch = false
+vim.o.incsearch = true
