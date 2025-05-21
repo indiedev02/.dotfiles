@@ -16,6 +16,3 @@ vim.o.guicursor = table.concat({
 -- Highlight fix when searching
 vim.o.hlsearch = false
 vim.o.incsearch = true
-
--- Tailwind line break
-vim.o.breakindent = true
