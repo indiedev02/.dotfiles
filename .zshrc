@@ -22,3 +22,8 @@ export CONDA_CHANGEPS1=false
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/kunalsharma/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
