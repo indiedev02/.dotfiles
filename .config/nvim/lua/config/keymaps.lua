@@ -8,7 +8,7 @@ local opts = { noremap = true, silent = true }
 -- Legend Primeagen
 
 keymap.set("n", "<C-d>", "<C-d>zz", opts)
-keymap.set("n", "<C-d>", "<C-d>zz", opts)
+keymap.set("n", "<C-u>", "<C-u>zz", opts)
 
 -- Tmux Navigation
 keymap.set("n", "<C-h>", ":TmuxNavigateLeft<Return>", opts)
