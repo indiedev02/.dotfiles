@@ -27,3 +27,4 @@ fpath=(/Users/kunalsharma/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
+eval "$(zoxide init zsh)"
