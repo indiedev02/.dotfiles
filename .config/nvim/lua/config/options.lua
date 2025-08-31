@@ -16,3 +16,5 @@ vim.o.guicursor = table.concat({
 -- Highlight fix when searching
 vim.o.hlsearch = false
 vim.o.incsearch = true
+
+vim.g.lazyvim_picker = "fzf"
