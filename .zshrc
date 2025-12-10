@@ -1,6 +1,6 @@
 # fnm
 eval "$(fnm env --use-on-cd)"
-
+export PATH="/Users/kunalsharma/.cargo/bin:$PATH"
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/opt/homebrew/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"

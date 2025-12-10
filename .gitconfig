@@ -1,3 +1,5 @@
 [user]
 	email = dev.kunalshar0@gmail.com
 	name = indiedev02
+[core]
+	ignorecase = false
